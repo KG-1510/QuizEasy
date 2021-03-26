@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/upload.css">
+    <title>QuizEasy | Upload</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/"><img width="150px" src="../static/assets/logoWhite.png" alt="navbarLogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href=dropsession><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="26" height="26" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#ffffff">
+                                    <path
+                                        d="M39.69231,0c-10.95673,0 -19.84615,8.88942 -19.84615,19.84615v132.30769c0,10.95673 8.88942,19.84615 19.84615,19.84615h92.61538c10.95673,0 19.84615,-8.88942 19.84615,-19.84615v-34.31731l-13.23077,11.57692v22.74038c0,3.64363 -2.97176,6.61538 -6.61538,6.61538h-92.61538c-3.64363,0 -6.61538,-2.97176 -6.61538,-6.61538v-132.30769c0,-3.64363 2.97176,-6.61538 6.61538,-6.61538h92.61538c3.64363,0 6.61538,2.97176 6.61538,6.61538v22.74038l13.23077,11.57692v-34.31731c0,-10.95673 -8.88942,-19.84615 -19.84615,-19.84615zM109.15385,42.79327c-1.65385,0.49099 -3.30769,2.17067 -3.30769,6.61538v16.74519h-39.69231c-3.64363,0 -6.61538,2.97176 -6.61538,6.61538v26.46154c0,3.64363 2.97176,6.61538 6.61538,6.61538h39.69231v16.53846c0,8.47596 6.61538,6.61538 6.61538,6.61538l49.61538,-43l-49.61538,-43c0,0 -1.65385,-0.69772 -3.30769,-0.20673z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg><strong> Logout</strong></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-3" id="content">
+        <div class="row">
+            <div class="col-md-5 mx-auto">
+                <div class="col-md-12 text-center">
+                    <h3>Upload document</h3>
+                </div>
+                <div class="alert alert-warning d-none" id="upload-message" role="alert">
+                    <p>⌛ Please wait while we generate your quiz, this might take few minutes.</p>
+                </div>
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="upload-container">
+                            <div class="border-container">
+                                <p>Supported file types</p>
+                                <div class="icons fa-4x">
+                                    <i class="fas fa-file-alt m-2 txt"></i>
+                                    <i class="fas fa-file-pdf m-2 pdf"></i>
+                                </div>
+                                <form action="/quiz" method="POST" enctype="multipart/form-data">
+                                    <label class="file-label">
+                                        <input class="file-input" type="file" name="file" accept=".txt, application/pdf"
+                                            id="file-upload" required />
+                                        <span class="file-cta">
+                                            <br>
+                                            <span class="choose-file-label"> Choose a file… </span>
+                                        </span>
+                                        <span class="file-name"> No file uploaded </span>
+                                    </label>
+                                    <p>Drag and drop files here, or
+                                        <a href="#" id="file-browser">browse</a> your computer.
+                                    </p>
+                                    <button class="submitDoc mt-4" type="submit" name="upload file">Generate
+                                        Quiz
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 text-center">
+        <p class="attribution"> © Copyright 2021 | Crafted with ❤️ by Team QuizEasy</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
+    <script src="../static/scripts/upload.js"></script>
+</body>
+
+</html>

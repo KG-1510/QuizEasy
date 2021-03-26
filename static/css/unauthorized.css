@@ -1,0 +1,19 @@
+body {
+  background-color: #fafafa;
+  height: 100vh;
+  min-height: 100vh;
+  color: black;
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+body main {
+  margin: 0.5em 0.5em 0 0.5em;
+}
+body footer .attribution {
+  font-size: 14px;
+  text-align: center;
+}
+#home401 {
+  text-decoration: none;
+}

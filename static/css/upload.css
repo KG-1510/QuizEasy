@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #674baf;
+  background-image: url(https://alcs-huddle.netlify.app/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: #b9b1b1
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 640px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.425);
+}
+
+h1 {
+  color: #130f40;
+  font-family: 'Varela Round', sans-serif;
+  letter-spacing: -.5px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.upload-container {
+  background-color: rgb(239, 239, 239);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.border-container {
+  border: 5px dashed rgba(198, 198, 198, 0.65);
+  border-radius: 6px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.border-container p {
+  color: #130f40;
+  font-weight: 600;
+  font-size: 1.1em;
+  letter-spacing: -1px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  opacity: 0.65;
+}
+
+#file-browser {
+  text-decoration: none;
+  color: rgb(22,42,255);
+  border-bottom: 3px dotted rgba(22, 22, 255, 0.85);
+}
+
+#file-browser:hover {
+  color: rgb(0, 0, 255);
+  border-bottom: 3px dotted rgba(0, 0, 255, 0.85);
+}
+.logout {
+  color: #fff;
+}
+.icons {
+  color: #95afc0;
+  opacity: 0.55;
+  transition: all 500ms ease;
+}
+.pdficon {
+  color: red;
+  opacity: 0.55;
+  transition: all 500ms ease;
+}
+.txticon {
+  color: blue;
+  opacity: 0.75;
+  transition: all 500ms ease;
+}
+.submitDoc {
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 1rem;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  line-height: 1;
+  background-color: #674baf;
+  border: none;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+.submitDoc:hover {
+  background-color: #733bff;
+  border-color: #733bff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+body footer .attribution {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
