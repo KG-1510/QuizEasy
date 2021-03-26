@@ -147,8 +147,8 @@ def result():
     if g.user:
         correct_q = 0
         for k, v in request.form.items():
-            print(k)
-            print(v)
+            # print(k)
+            # print(v)
             correct_q += 1
         return render_template('result.html', total=5, correct=correct_q)
     return render_template('unauthorized.html')
