@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+}
+
+html,
+body {
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+body {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: points;
+  background-color: var(--violet);
+  background-image: url("https://alcs-huddle.netlify.app/images/bg-desktop.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "helvetica", sans-serif !important;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+section {
+  padding-top: 150px;
+}
+
+main {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 40px 30px;
+  width: 95%;
+  max-width: 590px;
+  margin: auto;
+}
+
+.button.is-fullwidth {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  background-color:var(--violet);
+  color: #FFFFFF;
+}
