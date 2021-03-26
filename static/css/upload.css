@@ -21,7 +21,7 @@ a:hover {
 .wrapper {
   margin: auto;
   max-width: 640px;
-  padding-top: 60px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -30,14 +30,6 @@ a:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.425);
-}
-
-h1 {
-  color: #130f40;
-  font-family: 'Varela Round', sans-serif;
-  letter-spacing: -.5px;
-  font-weight: 700;
-  padding-bottom: 10px;
 }
 
 .upload-container {
@@ -83,13 +75,16 @@ h1 {
 }
 .pdficon {
   color: red;
-  opacity: 0.55;
+  opacity: 0.90;
   transition: all 500ms ease;
 }
 .txticon {
   color: blue;
-  opacity: 0.75;
+  opacity: 0.90;
   transition: all 500ms ease;
+}
+.icon-text {
+  font-size: 20px !important;
 }
 .submitDoc {
   color: #ffffff;
@@ -102,6 +97,9 @@ h1 {
   border: none;
   cursor: pointer;
   transition: all 500ms ease;
+}
+.file-label {
+  width: 200px;
 }
 .submitDoc:hover {
   background-color: #733bff;

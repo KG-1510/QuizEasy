@@ -1,0 +1,69 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+}
+
+html,
+body {
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+body {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: points;
+  background-color: var(--violet);
+  background-image: url("https://alcs-huddle.netlify.app/images/bg-desktop.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Poppins", sans-serif !important;
+  height: 100vh;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+section {
+  padding-top: 60px;
+}
+main {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.425);
+  color: #000000;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px 40px 30px;
+  width: 95%;
+  max-width: 590px;
+  margin: auto;
+}
+.text-white {
+  color: #fff;
+}
+.upload-another {
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 1rem;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  line-height: 1;
+  background-color: #674baf;
+  border: none;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+.upload-another:hover {
+  background-color: #733bff;
+  border-color: #733bff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+body footer .attribution {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}

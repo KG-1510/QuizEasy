@@ -23,6 +23,7 @@ fileInput.onchange = () => {
     else if(uploadedFileName.includes(".txt")){
       document.querySelector(".txt").classList.add('txticon')
       document.querySelector(".pdf").classList.remove('pdficon')
+    
     }
   }
 };
