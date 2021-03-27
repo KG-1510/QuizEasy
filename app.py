@@ -8,6 +8,8 @@ from workers import pdf2text, txt2questions
 # Constants
 UPLOAD_FOLDER = './pdf/'
 currentLocation = os.path.dirname(os.path.abspath(__file__))
+questionLength = 0
+correctAnswers = []
 
 
 
@@ -130,6 +132,16 @@ def quiz():
             uploaded_content = pdf2text(file_path, file_exten)
             questions = txt2questions(uploaded_content)
 
+            # Store the length of questions dict in global var
+            global questionLength
+            questionLength = len(questions)
+
+            # Store correct answers in global var
+            global correctAnswers
+
+            for i in range(questionLength):
+                correctAnswers.append(questions[i+1]['answer'])
+
             # File upload + convert success
             if uploaded_content is not None:
                 UPLOAD_STATUS = True
@@ -146,10 +158,15 @@ def quiz():
 def result():
     if g.user:
         correct_q = 0
-        for k, v in request.form.items():
-            # print(k)
-            # print(v)
-            correct_q += 1
+        selectedOptions = [] 
+        for i in range(questionLength):
+            radioGroupName = 'question'+str(i+1)
+            option = request.form.getlist(radioGroupName)
+            selectedOptions.append(option[0])
+        for i in selectedOptions:
+            for k in correctAnswers:
+                if(i == k):
+                    correct_q += 1    
         return render_template('result.html', total=5, correct=correct_q)
     return render_template('unauthorized.html')
 

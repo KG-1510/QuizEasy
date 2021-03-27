@@ -11,7 +11,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-a, .text-white {
+a,
+.text-white {
   color: #fff;
   text-decoration: none;
 }
@@ -23,6 +24,7 @@ a:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.425);
+  overflow-x: hidden;
 }
 
 input[type="radio"] {
@@ -41,24 +43,14 @@ input[type="radio"] + label {
 }
 
 input[type="radio"] + label:hover {
-  border: 2px solid #000000;
+  border: 2px solid #3859ff;
 }
 
-.on-select {
+input[type="radio"]:checked + label {
   background-image: none;
   background-color: #3859ff;
   color: #fff;
   border: 1px solid #3859ff !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.wrongans {
-  background-color: #f36;
-  color: #fff;
-  border: 1px solid #f36 !important;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;

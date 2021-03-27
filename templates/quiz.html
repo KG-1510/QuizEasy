@@ -23,7 +23,7 @@
         <a class="navbar-brand" href="/"><img width="150px" src="../static/assets/logoWhite.png" alt="navbarLogo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">   
+            <span class="navbar-toggler-icon">
                 <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
             </span>
         </button>
@@ -55,21 +55,16 @@
     </div>
     <form action="/result" method="POST">
         {% for i in range(size) %}
-        <section class="container m-5">
+        <section class="containerCard m-5">
             <main>
                 <div class="scp-quizzes-main">
                     <div class="scp-quizzes-data">
                         <h4 class="">{{ i+1 }}. {{ questions[i+1]['question'] }}</h4>
                         <br />
                         {% for op in questions[i+1]['options'] %}
-                        {% if op == questions[i+1]['answer'] %}
-                            <input type="radio" id="{{ questions[i+1]['answer'] }}" name="question{{ i+1 }}">
-                            <label id="question{{ i+1 }}" for="{{ questions[i+1]['answer'] }}">
-                                {{ op }}</label><br />
-                            {% else %}
-                            <input type="radio" name="question{{ i+1 }}">
-                            <label id="question{{ i+1 }}"> {{ op }}</label><br />
-                        {% endif %}
+                        <input type="radio" value="{{op}}" name="question{{i+1}}"
+                            id="{{op.replace(' ', '-')}}+question{{i+1}}" required>
+                        <label for="{{op.replace(' ', '-')}}+question{{i+1}}">{{op}}</label>
                         {% endfor %}
                     </div>
                 </div>
@@ -77,8 +72,7 @@
         </section>
         {% endfor %}
         <div class="text-center">
-            <button type="submit"
-                class="submitQuiz">Submit</button>
+            <button type="submit" class="submitQuiz">Submit</button>
         </div>
     </form>
 
@@ -93,22 +87,6 @@
         <p class="attribution"> © Copyright 2021 | Crafted with ❤️ by Team QuizEasy</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- <script type="text/javascript">
-        $(document).ready(function () {
-            $('label').click(function () {
-                $('label').removeClass('on-select');
-                $(this).addClass('on-select');
-            });
-        });
-    </script> -->
-    <!-- <script type="text/javascript">
-        $(document).ready(function () {
-            $('label').click(function () {
-                $('label').removeClass('wrongans');
-                $(this).addClass('wrongans');
-            });
-        });
-    </script> -->
 </body>
 
 </html>
