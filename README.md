@@ -1,6 +1,19 @@
 <h1 align="center">
     ✨ QuizEasy ✨
 </h1>
+<h2 align="center">
+    Built Using
+    <p align="center">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+        <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+        <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+        <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+        <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
+        <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+    </p>
+</h2>
 A web app to generate questions for PDF DOC you upload on-the-go! QuizEasy aims to cut down on the hassle of relying on the last minute preparation, question banks, and cramming of portions, instead, it makes learning intuitive by making the Natural Language Processing (NLP) algorithm do the heavy lifting of framing questions from the materials and helps the user to practice the concepts while studying on the go.
 
 ## ✨Features
@@ -114,15 +127,6 @@ Niharika
 </a>
 </p>
 </td>
-
-<td>
-
-</td>
-
-
-
-
-
 
   </table>
 </tr>
