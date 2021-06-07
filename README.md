@@ -25,7 +25,7 @@ A web app to generate questions for PDF DOC you upload on-the-go! QuizEasy aims 
 
 ## ⚡️Skill set
 
-- **Frontend**: HTML, CSS, JavaScript,Bootstrap
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
 - **Backend**: Flask
 - **IDE**: VS Code
 - **Version Control**: Git and GitHub
