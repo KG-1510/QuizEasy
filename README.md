@@ -19,9 +19,9 @@ A web app to generate questions for PDF DOC you upload on-the-go! QuizEasy aims 
 
 ## ✨Features
 
-- **resource saving**
-- self analysis and evaluation
--  **automatic question generation (AQG)**
+- **Resource Saving**
+- **Self Analysis and Evaluation**
+-  **Automatic Question Generation (AQG)**
 
 ## ⚡️Skill set
 
