@@ -139,5 +139,5 @@ Thank you for considering and taking the time to contribute! Before contributing
 <hr>
 
 <p align="center">
-crafted with <span style="color: #8b0000;">&hearts;</span> by <b>QuizEasy</b>
+Crafted with <span style="color: #8b0000;">&hearts;</span> by <b>QuizEasy</b>
 </p>
