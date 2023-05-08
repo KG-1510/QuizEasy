@@ -59,6 +59,10 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
+- Install SpaCy model from the link below
+
+https://spacy.io/models/en#en_core_web_md
+
 - Run Flask server using
 
 ```
